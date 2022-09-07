@@ -3,11 +3,19 @@ exports = {
         /**
          * Check if the schedule is created and delete if it exists.
          */
-        try {
-            let res = await $schedule.fetch({ name: 'syncSchedule' });
-            if (res) renderData();
-            else throw new Error('No Schedule found. Installation Halt');
-        } catch (error) {
+      try {
+        let res = await $schedule.fetch({ name: 'syncSchedule' });
+          if (res) {
+            // Do desired logic with the res object
+            // if let app successfully update on a happy path
+              renderData();
+
+            // if desired logic or verfication doesn't work
+            // throw error deliberately: throw new Error('No Schedule found. Installation Halt');
+          }
+
+      } catch (error) {
+          console.log('res', error);
             renderData({ message: error.message });
         }
     },

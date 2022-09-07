@@ -2531,3 +2531,760 @@ config/oauth_config.json
 config/iparams_test_data.json
 log/**/*
 
+2022-09-07 13:43:30.646 +0530 [debug] ([34mconfigs.js[0m) [31mloaded default configs as "{"updates":{"manifest_url":"https://ws.freshcloud.io/cli/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020}}"[0m
+2022-09-07 13:43:30.651 +0530 [debug] ([34mfile-util.js[0m) [31mError while requiring /Users/saifas/.fdk/configs.json: Cannot find module '/Users/saifas/.fdk/configs.json'
+Require stack:
+- /Users/saifas/Freshworks/freshapps_sdk/lib/utils/file-util.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/configs.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/logger.js
+- /Users/saifas/Freshworks/freshapps_sdk/index.js[0m
+2022-09-07 13:43:30.652 +0530 [debug] ([34mconfigs.js[0m) [31mloaded global configs as "{}"[0m
+2022-09-07 13:43:30.652 +0530 [debug] ([34mfile-util.js[0m) [31mError while requiring /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/.fdk/configs.json: Cannot find module '/Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/.fdk/configs.json'
+Require stack:
+- /Users/saifas/Freshworks/freshapps_sdk/lib/utils/file-util.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/configs.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/logger.js
+- /Users/saifas/Freshworks/freshapps_sdk/index.js[0m
+2022-09-07 13:43:30.652 +0530 [debug] ([34mconfigs.js[0m) [31mloaded local configs as "{}"[0m
+2022-09-07 13:43:30.652 +0530 [debug] ([34mconfigs.js[0m) [31mloaded env configs as "{"updates":{},"log":{},"javascript":{}}"[0m
+2022-09-07 13:43:30.652 +0530 [debug] ([34mconfigs.js[0m) [31mloaded resolved configs as "{"updates":{"manifest_url":"https://ws.freshcloud.io/cli/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020}}"[0m
+2022-09-07 13:43:30.652 +0530 [debug] ([34mlogger.js[0m) [31mStarting FDK in node v14.19.3 on darwin[0m
+2022-09-07 13:43:30.653 +0530 [debug] ([34msequelize.js[0m) [31msetting up sqilite at "/Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/.fdk/store.sqlite"[0m
+2022-09-07 13:43:30.653 +0530 [debug] ([34mindex.js[0m) [31mRunning with args {"cmd":"run","gopts":{},"opts":{},"goptArg":{},"optArg":{},"args":[]}[0m
+2022-09-07 13:43:30.653 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by August 31, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshcloud.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.4.0","command":"npm install https://dl.freshcloud.io/cli/fdk.tgz -g","message":""}},"addon":{"version":"2.0.0","url":"https://dl.freshcloud.io/cli-addon/addon-2.0.0.zip"}},"last_updated":{"time_stamp":1661768522732}}[0m
+2022-09-07 13:43:30.653 +0530 [debug] ([34mupdater.js[0m) [31mlast check more than 24 hours ago, looking for updates again[0m
+2022-09-07 13:43:31.958 +0530 [debug] ([34mindex.js[0m) [31mError: self signed certificate in certificate chain
+    at TLSSocket.onConnectSecure (_tls_wrap.js:1515:34)
+    at TLSSocket.emit (events.js:400:28)
+    at TLSSocket._finishInit (_tls_wrap.js:937:8)
+    at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:709:12)[0m
+2022-09-07 13:43:31.959 +0530 [error] self signed certificate in certificate chain
+2022-09-07 13:43:32.316 +0530 [debug] ([34mmanifest.js[0m) [31mReloading manifest with {"platform-version":"2.2","product":{"freshdesk":{"location":{"ticket_sidebar":{"url":"index.html","icon":"styles/images/icon.svg"}},"events":{"afterAppUpdate":{"handler":"afterAppUpdateHandler"},"onAppInstall":{"handler":"onAppInstallHandler"},"onScheduledEvent":{"handler":"onScheduledEventHandler"}}}},"whitelisted-domains":[],"engines":{"node":"14.19.3","fdk":"8.5.0"}}.[0m
+2022-09-07 13:43:32.316 +0530 [debug] ([34mmanifest.js[0m) [31mInferred db,backend as features.[0m
+2022-09-07 13:43:32.320 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by August 31, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshcloud.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.4.0","command":"npm install https://dl.freshcloud.io/cli/fdk.tgz -g","message":""}},"addon":{"version":"2.0.0","url":"https://dl.freshcloud.io/cli-addon/addon-2.0.0.zip"}},"last_updated":{"time_stamp":1661768522732}}[0m
+2022-09-07 13:43:32.351 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by August 31, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshcloud.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.4.0","command":"npm install https://dl.freshcloud.io/cli/fdk.tgz -g","message":""}},"addon":{"version":"2.0.0","url":"https://dl.freshcloud.io/cli-addon/addon-2.0.0.zip"}},"last_updated":{"time_stamp":1661768522732}}[0m
+2022-09-07 13:43:34.332 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by August 31, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshcloud.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.4.0","command":"npm install https://dl.freshcloud.io/cli/fdk.tgz -g","message":""}},"addon":{"version":"2.0.0","url":"https://dl.freshcloud.io/cli-addon/addon-2.0.0.zip"}},"last_updated":{"time_stamp":1661768522732}}[0m
+2022-09-07 13:43:35.399 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2022-09-07 13:43:35.400 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator actions[0m
+2022-09-07 13:43:35.400 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-dir[0m
+2022-09-07 13:43:35.401 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator config-dir[0m
+2022-09-07 13:43:35.401 +0530 [debug] ([34mconfig-dir.js[0m) [31mChecking to see if /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/config/ exists.[0m
+2022-09-07 13:43:35.402 +0530 [debug] ([34mconfig-dir.js[0m) [31mFetched the following config files iparams.json[0m
+2022-09-07 13:43:35.402 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator custom-objects[0m
+2022-09-07 13:43:35.402 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator event[0m
+2022-09-07 13:43:35.412 +0530 [debug] ([34mevent-util.js[0m) [31mFound ["afterAppUpdateHandler","onAppInstallHandler","onScheduledEventHandler"] as exported functions.[0m
+2022-09-07 13:43:35.413 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator iparam[0m
+2022-09-07 13:43:35.415 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator lint[0m
+2022-09-07 13:43:35.416 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest[0m
+2022-09-07 13:43:35.416 +0530 [debug] ([34mmanifest.js[0m) [31mrunning manifest validation with type run_validation[0m
+2022-09-07 13:43:35.416 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest-dependency[0m
+2022-09-07 13:43:35.416 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator oauth[0m
+2022-09-07 13:43:35.416 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator pkgsize[0m
+2022-09-07 13:43:35.416 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator schema[0m
+2022-09-07 13:43:35.416 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator version-check[0m
+2022-09-07 13:43:35.421 +0530 [debug] ([34mwatcher.js[0m) [31mPreparing to watch the following files ./app,./config,./manifest.json[0m
+2022-09-07 13:43:35.425 +0530 [debug] ([34minstall-util.js[0m) [31mdependency installer called with {}[0m
+2022-09-07 13:43:35.426 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:43:35.426 +0530 [debug] ([34mcustom-objects.js[0m) [31mto force or not? false[0m
+2022-09-07 13:43:35.426 +0530 [debug] ([34mcustom-objects.js[0m) [31mbeginning to re-sync db[0m
+2022-09-07 13:43:35.615 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/bigint-pivot.js"[0m
+2022-09-07 13:43:35.617 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/entity-field-choice.js"[0m
+2022-09-07 13:43:35.618 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/entity-field.js"[0m
+2022-09-07 13:43:35.619 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/entity.js"[0m
+2022-09-07 13:43:35.620 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/record.js"[0m
+2022-09-07 13:43:35.621 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/string-pivot.js"[0m
+2022-09-07 13:43:35.640 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:43:35.641 +0530 [debug] ([34mcustom-objects.js[0m) [31mupdated local store with latest entity hash[0m
+2022-09-07 13:43:35.641 +0530 [info] Starting local testing server at http://*:10001/    
+Append 'dev=true' to your Freshdesk account URL to start testing    
+e.g. https://domain.freshdesk.com/a/tickets/1?dev=true    
+Quit the server with Control-C.
+2022-09-07 13:43:35.641 +0530 [info] 
+To simulate product, app setup, and external events, visit - http://localhost:10001/web/test
+2022-09-07 13:43:35.641 +0530 [info] Populating test data with events found in the app
+2022-09-07 13:43:48.109 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:43:48.110 +0530 [debug] ([34miframe.js[0m) [31mResponding to product with {"configs":{},"displayName":"afterAppUpdate","product":{"freshdesk":{"location":{"ticket_sidebar":{"url":"agent/index.html","icon":"agent/styles/images/icon.svg"}},"events":{"afterAppUpdate":{"handler":"afterAppUpdateHandler"},"onAppInstall":{"handler":"onAppInstallHandler"},"onScheduledEvent":{"handler":"onScheduledEventHandler"}}}},"features":["db","backend"],"actions":false,"omni":false,"products":["freshdesk"],"platform":"2.2","v2":[]}[0m
+2022-09-07 13:43:48.144 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:43:48.145 +0530 [debug] ([34miframe.js[0m) [31mResponding to product with {"configs":{},"displayName":"afterAppUpdate","product":{"freshdesk":{"location":{"ticket_sidebar":{"url":"agent/index.html","icon":"agent/styles/images/icon.svg"}},"events":{"afterAppUpdate":{"handler":"afterAppUpdateHandler"},"onAppInstall":{"handler":"onAppInstallHandler"},"onScheduledEvent":{"handler":"onScheduledEventHandler"}}}},"features":["db","backend"],"actions":false,"omni":false,"products":["freshdesk"],"platform":"2.2","v2":[]}[0m
+2022-09-07 13:43:48.147 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:43:48.147 +0530 [debug] ([34miframe.js[0m) [31mResponding to product with {"configs":{},"displayName":"afterAppUpdate","product":{"freshdesk":{"location":{"ticket_sidebar":{"url":"agent/index.html","icon":"agent/styles/images/icon.svg"}},"events":{"afterAppUpdate":{"handler":"afterAppUpdateHandler"},"onAppInstall":{"handler":"onAppInstallHandler"},"onScheduledEvent":{"handler":"onScheduledEventHandler"}}}},"features":["db","backend"],"actions":false,"omni":false,"products":["freshdesk"],"platform":"2.2","v2":[]}[0m
+2022-09-07 13:43:50.833 +0530 [debug] ([34mevent-util.js[0m) [31mFound ["afterAppUpdateHandler","onAppInstallHandler","onScheduledEventHandler"] as exported functions.[0m
+2022-09-07 13:44:00.722 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:44:00.723 +0530 [debug] ([34miframe.js[0m) [31mResponding to product with {"configs":{},"displayName":"afterAppUpdate","product":{"freshdesk":{"location":{"ticket_sidebar":{"url":"agent/index.html","icon":"agent/styles/images/icon.svg"}},"events":{"afterAppUpdate":{"handler":"afterAppUpdateHandler"},"onAppInstall":{"handler":"onAppInstallHandler"},"onScheduledEvent":{"handler":"onScheduledEventHandler"}}}},"features":["db","backend"],"actions":false,"omni":false,"products":["freshdesk"],"platform":"2.2","v2":[]}[0m
+2022-09-07 13:44:00.729 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:44:00.729 +0530 [debug] ([34miframe.js[0m) [31mResponding to product with {"configs":{},"displayName":"afterAppUpdate","product":{"freshdesk":{"location":{"ticket_sidebar":{"url":"agent/index.html","icon":"agent/styles/images/icon.svg"}},"events":{"afterAppUpdate":{"handler":"afterAppUpdateHandler"},"onAppInstall":{"handler":"onAppInstallHandler"},"onScheduledEvent":{"handler":"onScheduledEventHandler"}}}},"features":["db","backend"],"actions":false,"omni":false,"products":["freshdesk"],"platform":"2.2","v2":[]}[0m
+2022-09-07 13:44:00.743 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:44:00.743 +0530 [debug] ([34miframe.js[0m) [31mResponding to product with {"configs":{},"displayName":"afterAppUpdate","product":{"freshdesk":{"location":{"ticket_sidebar":{"url":"agent/index.html","icon":"agent/styles/images/icon.svg"}},"events":{"afterAppUpdate":{"handler":"afterAppUpdateHandler"},"onAppInstall":{"handler":"onAppInstallHandler"},"onScheduledEvent":{"handler":"onScheduledEventHandler"}}}},"features":["db","backend"],"actions":false,"omni":false,"products":["freshdesk"],"platform":"2.2","v2":[]}[0m
+2022-09-07 13:44:02.576 +0530 [debug] ([34mevent-util.js[0m) [31mFound ["afterAppUpdateHandler","onAppInstallHandler","onScheduledEventHandler"] as exported functions.[0m
+2022-09-07 13:44:06.454 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:44:06.454 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 13:44:06.454 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"productEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 13:44:06.455 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 13:44:06.527 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:44:06.530 +0530 [error] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/saifas/Freshworks/freshapps_sdk/node_modules/express/lib/response.js:794:10)
+    at renderData (/Users/saifas/Freshworks/freshapps_sdk/lib/event_handler/framework.js:192:20)
+    at Object.afterAppUpdateHandler (server.js:406:7)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2022-09-07 13:44:07.029 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 13:44:37.403 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:44:37.403 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 13:44:37.403 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"productEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 13:44:37.404 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 13:44:37.442 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:44:37.945 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 13:45:49.820 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:45:49.821 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 13:45:49.821 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"productEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 13:45:49.822 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 13:45:49.857 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:45:49.859 +0530 [error] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/saifas/Freshworks/freshapps_sdk/node_modules/express/lib/response.js:794:10)
+    at renderData (/Users/saifas/Freshworks/freshapps_sdk/lib/event_handler/framework.js:192:20)
+    at Object.afterAppUpdateHandler (server.js:432:7)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2022-09-07 13:45:50.359 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 13:46:21.343 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:46:21.343 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 13:46:21.343 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"productEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 13:46:21.344 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 13:46:21.376 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:46:21.377 +0530 [error] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/saifas/Freshworks/freshapps_sdk/node_modules/express/lib/response.js:794:10)
+    at renderData (/Users/saifas/Freshworks/freshapps_sdk/lib/event_handler/framework.js:192:20)
+    at Object.afterAppUpdateHandler (server.js:432:7)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2022-09-07 13:46:21.874 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 13:46:39.384 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:46:39.384 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 13:46:39.384 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"productEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 13:46:39.384 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 13:46:39.409 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:46:39.410 +0530 [error] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/saifas/Freshworks/freshapps_sdk/node_modules/express/lib/response.js:794:10)
+    at renderData (/Users/saifas/Freshworks/freshapps_sdk/lib/event_handler/framework.js:192:20)
+    at Object.afterAppUpdateHandler (server.js:432:7)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2022-09-07 13:46:39.910 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 13:46:52.798 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:46:52.799 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 13:46:52.799 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"productEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 13:46:52.799 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 13:46:52.822 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:46:52.826 +0530 [error] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/saifas/Freshworks/freshapps_sdk/node_modules/express/lib/response.js:794:10)
+    at renderData (/Users/saifas/Freshworks/freshapps_sdk/lib/event_handler/framework.js:192:20)
+    at Object.afterAppUpdateHandler (server.js:432:7)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2022-09-07 13:46:53.323 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 13:47:23.927 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:47:23.927 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 13:47:23.927 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"productEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 13:47:23.928 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 13:47:23.946 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:47:23.949 +0530 [error] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/saifas/Freshworks/freshapps_sdk/node_modules/express/lib/response.js:794:10)
+    at renderData (/Users/saifas/Freshworks/freshapps_sdk/lib/event_handler/framework.js:192:20)
+    at Object.afterAppUpdateHandler (server.js:432:7)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2022-09-07 13:47:24.447 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 13:47:27.727 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:47:27.727 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 13:47:27.727 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"productEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 13:47:27.728 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 13:47:27.750 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:47:27.751 +0530 [error] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/saifas/Freshworks/freshapps_sdk/node_modules/express/lib/response.js:794:10)
+    at renderData (/Users/saifas/Freshworks/freshapps_sdk/lib/event_handler/framework.js:192:20)
+    at Object.afterAppUpdateHandler (server.js:432:7)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2022-09-07 13:47:28.251 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 13:48:40.694 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:48:40.694 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 13:48:40.694 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"productEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 13:48:40.694 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 13:48:40.707 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:48:40.708 +0530 [error] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/saifas/Freshworks/freshapps_sdk/node_modules/express/lib/response.js:794:10)
+    at renderData (/Users/saifas/Freshworks/freshapps_sdk/lib/event_handler/framework.js:192:20)
+    at Object.afterAppUpdateHandler (server.js:328:7)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2022-09-07 13:48:41.209 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 13:48:48.224 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:48:48.224 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 13:48:48.224 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"productEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 13:48:48.224 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 13:48:48.236 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:48:48.237 +0530 [error] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/saifas/Freshworks/freshapps_sdk/node_modules/express/lib/response.js:794:10)
+    at renderData (/Users/saifas/Freshworks/freshapps_sdk/lib/event_handler/framework.js:192:20)
+    at Object.afterAppUpdateHandler (server.js:328:7)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2022-09-07 13:48:48.738 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 13:49:12.481 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:49:12.482 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 13:49:12.482 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"productEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 13:49:12.482 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 13:49:12.495 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:49:12.496 +0530 [error] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/saifas/Freshworks/freshapps_sdk/node_modules/express/lib/response.js:794:10)
+    at renderData (/Users/saifas/Freshworks/freshapps_sdk/lib/event_handler/framework.js:192:20)
+    at Object.afterAppUpdateHandler (server.js:341:7)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2022-09-07 13:49:12.996 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 13:49:57.282 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:49:57.283 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 13:49:57.283 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"productEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 13:49:57.283 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 13:49:57.296 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:49:57.298 +0530 [error] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/saifas/Freshworks/freshapps_sdk/node_modules/express/lib/response.js:794:10)
+    at renderData (/Users/saifas/Freshworks/freshapps_sdk/lib/event_handler/framework.js:192:20)
+    at Object.afterAppUpdateHandler (server.js:341:7)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2022-09-07 13:49:57.798 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 13:50:06.634 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:50:06.635 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 13:50:06.635 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"productEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 13:50:06.635 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 13:50:06.649 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:50:06.650 +0530 [error] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/saifas/Freshworks/freshapps_sdk/node_modules/express/lib/response.js:794:10)
+    at renderData (/Users/saifas/Freshworks/freshapps_sdk/lib/event_handler/framework.js:192:20)
+    at Object.afterAppUpdateHandler (server.js:341:7)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2022-09-07 13:50:07.150 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 13:50:31.059 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:50:31.060 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 13:50:31.060 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"productEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 13:50:31.060 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 13:50:31.074 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:50:31.076 +0530 [error] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/saifas/Freshworks/freshapps_sdk/node_modules/express/lib/response.js:794:10)
+    at renderData (/Users/saifas/Freshworks/freshapps_sdk/lib/event_handler/framework.js:192:20)
+    at Object.afterAppUpdateHandler (server.js:354:7)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2022-09-07 13:50:31.573 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 13:50:38.350 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:50:38.351 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 13:50:38.351 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"productEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 13:50:38.351 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 13:50:38.363 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:50:38.365 +0530 [error] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/saifas/Freshworks/freshapps_sdk/node_modules/express/lib/response.js:794:10)
+    at renderData (/Users/saifas/Freshworks/freshapps_sdk/lib/event_handler/framework.js:192:20)
+    at Object.afterAppUpdateHandler (server.js:354:7)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2022-09-07 13:50:38.869 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 13:50:55.568 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:50:55.568 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 13:50:55.568 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"productEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 13:50:55.569 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 13:50:55.585 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:50:55.586 +0530 [error] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/saifas/Freshworks/freshapps_sdk/node_modules/express/lib/response.js:794:10)
+    at renderData (/Users/saifas/Freshworks/freshapps_sdk/lib/event_handler/framework.js:192:20)
+    at Object.afterAppUpdateHandler (server.js:354:7)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2022-09-07 13:50:56.084 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 13:51:07.259 +0530 [info] 
+NOTE: We recommend a coverage of 80% for apps that are to be published in the public marketplace.
+2022-09-07 13:51:09.899 +0530 [debug] ([34mconfigs.js[0m) [31mloaded default configs as "{"updates":{"manifest_url":"https://ws.freshcloud.io/cli/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020}}"[0m
+2022-09-07 13:51:09.903 +0530 [debug] ([34mfile-util.js[0m) [31mError while requiring /Users/saifas/.fdk/configs.json: Cannot find module '/Users/saifas/.fdk/configs.json'
+Require stack:
+- /Users/saifas/Freshworks/freshapps_sdk/lib/utils/file-util.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/configs.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/logger.js
+- /Users/saifas/Freshworks/freshapps_sdk/index.js[0m
+2022-09-07 13:51:09.903 +0530 [debug] ([34mconfigs.js[0m) [31mloaded global configs as "{}"[0m
+2022-09-07 13:51:09.903 +0530 [debug] ([34mfile-util.js[0m) [31mError while requiring /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/.fdk/configs.json: Cannot find module '/Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/.fdk/configs.json'
+Require stack:
+- /Users/saifas/Freshworks/freshapps_sdk/lib/utils/file-util.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/configs.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/logger.js
+- /Users/saifas/Freshworks/freshapps_sdk/index.js[0m
+2022-09-07 13:51:09.903 +0530 [debug] ([34mconfigs.js[0m) [31mloaded local configs as "{}"[0m
+2022-09-07 13:51:09.903 +0530 [debug] ([34mconfigs.js[0m) [31mloaded env configs as "{"updates":{},"log":{},"javascript":{}}"[0m
+2022-09-07 13:51:09.903 +0530 [debug] ([34mconfigs.js[0m) [31mloaded resolved configs as "{"updates":{"manifest_url":"https://ws.freshcloud.io/cli/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020}}"[0m
+2022-09-07 13:51:09.903 +0530 [debug] ([34mlogger.js[0m) [31mStarting FDK in node v14.19.3 on darwin[0m
+2022-09-07 13:51:09.904 +0530 [debug] ([34msequelize.js[0m) [31msetting up sqilite at "/Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/.fdk/store.sqlite"[0m
+2022-09-07 13:51:09.904 +0530 [debug] ([34mindex.js[0m) [31mRunning with args {"cmd":"run","gopts":{},"opts":{},"goptArg":{},"optArg":{},"args":[]}[0m
+2022-09-07 13:51:09.904 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by August 31, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshcloud.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.4.0","command":"npm install https://dl.freshcloud.io/cli/fdk.tgz -g","message":""}},"addon":{"version":"2.0.0","url":"https://dl.freshcloud.io/cli-addon/addon-2.0.0.zip"}},"last_updated":{"time_stamp":1661768522732}}[0m
+2022-09-07 13:51:09.904 +0530 [debug] ([34mupdater.js[0m) [31mlast check more than 24 hours ago, looking for updates again[0m
+2022-09-07 13:51:10.608 +0530 [debug] ([34mindex.js[0m) [31mError: self signed certificate in certificate chain
+    at TLSSocket.onConnectSecure (_tls_wrap.js:1515:34)
+    at TLSSocket.emit (events.js:400:28)
+    at TLSSocket._finishInit (_tls_wrap.js:937:8)
+    at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:709:12)[0m
+2022-09-07 13:51:10.609 +0530 [error] self signed certificate in certificate chain
+2022-09-07 13:51:10.946 +0530 [debug] ([34mmanifest.js[0m) [31mReloading manifest with {"platform-version":"2.2","product":{"freshdesk":{"location":{"ticket_sidebar":{"url":"index.html","icon":"styles/images/icon.svg"}},"events":{"afterAppUpdate":{"handler":"afterAppUpdateHandler"},"onAppInstall":{"handler":"onAppInstallHandler"},"onScheduledEvent":{"handler":"onScheduledEventHandler"}}}},"whitelisted-domains":[],"engines":{"node":"14.19.3","fdk":"8.5.0"}}.[0m
+2022-09-07 13:51:10.946 +0530 [debug] ([34mmanifest.js[0m) [31mInferred db,backend as features.[0m
+2022-09-07 13:51:10.949 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by August 31, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshcloud.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.4.0","command":"npm install https://dl.freshcloud.io/cli/fdk.tgz -g","message":""}},"addon":{"version":"2.0.0","url":"https://dl.freshcloud.io/cli-addon/addon-2.0.0.zip"}},"last_updated":{"time_stamp":1661768522732}}[0m
+2022-09-07 13:51:10.978 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by August 31, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshcloud.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.4.0","command":"npm install https://dl.freshcloud.io/cli/fdk.tgz -g","message":""}},"addon":{"version":"2.0.0","url":"https://dl.freshcloud.io/cli-addon/addon-2.0.0.zip"}},"last_updated":{"time_stamp":1661768522732}}[0m
+2022-09-07 13:51:12.815 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by August 31, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshcloud.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.4.0","command":"npm install https://dl.freshcloud.io/cli/fdk.tgz -g","message":""}},"addon":{"version":"2.0.0","url":"https://dl.freshcloud.io/cli-addon/addon-2.0.0.zip"}},"last_updated":{"time_stamp":1661768522732}}[0m
+2022-09-07 13:51:13.969 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2022-09-07 13:51:13.970 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator actions[0m
+2022-09-07 13:51:13.971 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-dir[0m
+2022-09-07 13:51:13.972 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator config-dir[0m
+2022-09-07 13:51:13.972 +0530 [debug] ([34mconfig-dir.js[0m) [31mChecking to see if /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/config/ exists.[0m
+2022-09-07 13:51:13.972 +0530 [debug] ([34mconfig-dir.js[0m) [31mFetched the following config files iparams.json[0m
+2022-09-07 13:51:13.973 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator custom-objects[0m
+2022-09-07 13:51:13.973 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator event[0m
+2022-09-07 13:51:13.983 +0530 [debug] ([34mevent-util.js[0m) [31mFound ["afterAppUpdateHandler","onAppInstallHandler","onScheduledEventHandler"] as exported functions.[0m
+2022-09-07 13:51:13.984 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator iparam[0m
+2022-09-07 13:51:13.987 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator lint[0m
+2022-09-07 13:51:13.987 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest[0m
+2022-09-07 13:51:13.987 +0530 [debug] ([34mmanifest.js[0m) [31mrunning manifest validation with type run_validation[0m
+2022-09-07 13:51:13.987 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest-dependency[0m
+2022-09-07 13:51:13.987 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator oauth[0m
+2022-09-07 13:51:13.987 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator pkgsize[0m
+2022-09-07 13:51:13.988 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator schema[0m
+2022-09-07 13:51:13.988 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator version-check[0m
+2022-09-07 13:51:13.992 +0530 [debug] ([34mwatcher.js[0m) [31mPreparing to watch the following files ./app,./config,./manifest.json[0m
+2022-09-07 13:51:13.997 +0530 [debug] ([34minstall-util.js[0m) [31mdependency installer called with {}[0m
+2022-09-07 13:51:13.997 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:51:13.997 +0530 [debug] ([34mcustom-objects.js[0m) [31mto force or not? false[0m
+2022-09-07 13:51:13.998 +0530 [debug] ([34mcustom-objects.js[0m) [31mbeginning to re-sync db[0m
+2022-09-07 13:51:14.157 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/bigint-pivot.js"[0m
+2022-09-07 13:51:14.159 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/entity-field-choice.js"[0m
+2022-09-07 13:51:14.160 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/entity-field.js"[0m
+2022-09-07 13:51:14.161 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/entity.js"[0m
+2022-09-07 13:51:14.162 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/record.js"[0m
+2022-09-07 13:51:14.163 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/string-pivot.js"[0m
+2022-09-07 13:51:14.181 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:51:14.182 +0530 [debug] ([34mcustom-objects.js[0m) [31mupdated local store with latest entity hash[0m
+2022-09-07 13:51:14.183 +0530 [info] Starting local testing server at http://*:10001/    
+Append 'dev=true' to your Freshdesk account URL to start testing    
+e.g. https://domain.freshdesk.com/a/tickets/1?dev=true    
+Quit the server with Control-C.
+2022-09-07 13:51:14.183 +0530 [info] 
+To simulate product, app setup, and external events, visit - http://localhost:10001/web/test
+2022-09-07 13:51:14.183 +0530 [info] Populating test data with events found in the app
+2022-09-07 13:51:16.923 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:51:16.923 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 13:51:16.923 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"productEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 13:51:16.924 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 13:51:16.987 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:51:16.990 +0530 [error] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/saifas/Freshworks/freshapps_sdk/node_modules/express/lib/response.js:794:10)
+    at renderData (/Users/saifas/Freshworks/freshapps_sdk/lib/event_handler/framework.js:192:20)
+    at Object.afterAppUpdateHandler (server.js:354:7)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2022-09-07 13:51:17.491 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 13:52:02.318 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:52:02.318 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 13:52:02.318 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"appEvent","categoryArgs":{"methodName":"onAppInstall","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"sample.freshdesk.com","event":"onAppInstall","region":"US","data":{"sample_data1":"sample value1","sample_data2":"sample value2","sample_data3":3},"iparams":{}}}}[0m
+2022-09-07 13:52:02.319 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 13:52:02.358 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:52:02.359 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 13:52:02.857 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 13:52:07.890 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"aftera_101_101_schedule_syncSchedule_freshdesk":{"name":"syncSchedule","schedule_at":"2022-09-09T03:47:00.000Z","repeat":{"time_unit":"minutes","frequency":10,"timezone":"UTC"},"data":{"desc":"This data will be passed as argument to handler"}}}[0m
+2022-09-07 13:52:07.890 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 13:52:07.890 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"productEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 13:52:07.890 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 13:52:07.922 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"aftera_101_101_schedule_syncSchedule_freshdesk":{"name":"syncSchedule","schedule_at":"2022-09-09T03:47:00.000Z","repeat":{"time_unit":"minutes","frequency":10,"timezone":"UTC"},"data":{"desc":"This data will be passed as argument to handler"}}}[0m
+2022-09-07 13:52:08.425 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 13:53:32.261 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"aftera_101_101_schedule_syncSchedule_freshdesk":{"name":"syncSchedule","schedule_at":"2022-09-09T03:47:00.000Z","repeat":{"time_unit":"minutes","frequency":10,"timezone":"UTC"},"data":{"desc":"This data will be passed as argument to handler"}}}[0m
+2022-09-07 13:53:32.261 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 13:53:32.261 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"productEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 13:53:32.262 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 13:53:32.295 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"aftera_101_101_schedule_syncSchedule_freshdesk":{"name":"syncSchedule","schedule_at":"2022-09-09T03:47:00.000Z","repeat":{"time_unit":"minutes","frequency":10,"timezone":"UTC"},"data":{"desc":"This data will be passed as argument to handler"}}}[0m
+2022-09-07 13:53:32.297 +0530 [error] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/saifas/Freshworks/freshapps_sdk/node_modules/express/lib/response.js:794:10)
+    at renderData (/Users/saifas/Freshworks/freshapps_sdk/lib/event_handler/framework.js:192:20)
+    at Object.afterAppUpdateHandler (server.js:362:7)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2022-09-07 13:53:32.798 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 13:53:42.511 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"aftera_101_101_schedule_syncSchedule_freshdesk":{"name":"syncSchedule","schedule_at":"2022-09-09T03:47:00.000Z","repeat":{"time_unit":"minutes","frequency":10,"timezone":"UTC"},"data":{"desc":"This data will be passed as argument to handler"}}}[0m
+2022-09-07 13:53:42.511 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 13:53:42.511 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"productEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 13:53:42.511 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 13:53:42.538 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"aftera_101_101_schedule_syncSchedule_freshdesk":{"name":"syncSchedule","schedule_at":"2022-09-09T03:47:00.000Z","repeat":{"time_unit":"minutes","frequency":10,"timezone":"UTC"},"data":{"desc":"This data will be passed as argument to handler"}}}[0m
+2022-09-07 13:53:42.540 +0530 [error] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/saifas/Freshworks/freshapps_sdk/node_modules/express/lib/response.js:794:10)
+    at renderData (/Users/saifas/Freshworks/freshapps_sdk/lib/event_handler/framework.js:192:20)
+    at Object.afterAppUpdateHandler (server.js:351:7)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2022-09-07 13:53:43.040 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 13:54:01.237 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"aftera_101_101_schedule_syncSchedule_freshdesk":{"name":"syncSchedule","schedule_at":"2022-09-09T03:47:00.000Z","repeat":{"time_unit":"minutes","frequency":10,"timezone":"UTC"},"data":{"desc":"This data will be passed as argument to handler"}}}[0m
+2022-09-07 13:54:01.237 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 13:54:01.237 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"productEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 13:54:01.238 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 13:54:01.256 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"aftera_101_101_schedule_syncSchedule_freshdesk":{"name":"syncSchedule","schedule_at":"2022-09-09T03:47:00.000Z","repeat":{"time_unit":"minutes","frequency":10,"timezone":"UTC"},"data":{"desc":"This data will be passed as argument to handler"}}}[0m
+2022-09-07 13:54:01.257 +0530 [error] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/saifas/Freshworks/freshapps_sdk/node_modules/express/lib/response.js:794:10)
+    at renderData (/Users/saifas/Freshworks/freshapps_sdk/lib/event_handler/framework.js:192:20)
+    at Object.afterAppUpdateHandler (server.js:351:7)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2022-09-07 13:54:01.761 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 13:54:26.190 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"aftera_101_101_schedule_syncSchedule_freshdesk":{"name":"syncSchedule","schedule_at":"2022-09-09T03:47:00.000Z","repeat":{"time_unit":"minutes","frequency":10,"timezone":"UTC"},"data":{"desc":"This data will be passed as argument to handler"}}}[0m
+2022-09-07 13:54:26.190 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 13:54:26.190 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"productEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 13:54:26.191 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 13:54:26.210 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"aftera_101_101_schedule_syncSchedule_freshdesk":{"name":"syncSchedule","schedule_at":"2022-09-09T03:47:00.000Z","repeat":{"time_unit":"minutes","frequency":10,"timezone":"UTC"},"data":{"desc":"This data will be passed as argument to handler"}}}[0m
+2022-09-07 13:54:26.212 +0530 [error] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/saifas/Freshworks/freshapps_sdk/node_modules/express/lib/response.js:794:10)
+    at renderData (/Users/saifas/Freshworks/freshapps_sdk/lib/event_handler/framework.js:192:20)
+    at Object.afterAppUpdateHandler (server.js:351:7)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2022-09-07 13:54:26.713 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 13:54:51.997 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"aftera_101_101_schedule_syncSchedule_freshdesk":{"name":"syncSchedule","schedule_at":"2022-09-09T03:47:00.000Z","repeat":{"time_unit":"minutes","frequency":10,"timezone":"UTC"},"data":{"desc":"This data will be passed as argument to handler"}}}[0m
+2022-09-07 13:54:51.998 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 13:54:51.998 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"productEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 13:54:51.998 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 13:54:52.017 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"aftera_101_101_schedule_syncSchedule_freshdesk":{"name":"syncSchedule","schedule_at":"2022-09-09T03:47:00.000Z","repeat":{"time_unit":"minutes","frequency":10,"timezone":"UTC"},"data":{"desc":"This data will be passed as argument to handler"}}}[0m
+2022-09-07 13:54:52.018 +0530 [error] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/saifas/Freshworks/freshapps_sdk/node_modules/express/lib/response.js:794:10)
+    at renderData (/Users/saifas/Freshworks/freshapps_sdk/lib/event_handler/framework.js:192:20)
+    at Object.afterAppUpdateHandler (server.js:351:7)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2022-09-07 13:54:52.521 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 14:00:18.429 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"aftera_101_101_schedule_syncSchedule_freshdesk":{"name":"syncSchedule","schedule_at":"2022-09-09T03:47:00.000Z","repeat":{"time_unit":"minutes","frequency":10,"timezone":"UTC"},"data":{"desc":"This data will be passed as argument to handler"}}}[0m
+2022-09-07 14:00:18.429 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 14:00:18.429 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"productEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 14:00:18.430 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 14:00:18.447 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"aftera_101_101_schedule_syncSchedule_freshdesk":{"name":"syncSchedule","schedule_at":"2022-09-09T03:47:00.000Z","repeat":{"time_unit":"minutes","frequency":10,"timezone":"UTC"},"data":{"desc":"This data will be passed as argument to handler"}}}[0m
+2022-09-07 14:00:18.449 +0530 [error] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (internal/errors.js:322:7)
+    at ServerResponse.setHeader (_http_outgoing.js:561:11)
+    at ServerResponse.header (/Users/saifas/Freshworks/freshapps_sdk/node_modules/express/lib/response.js:794:10)
+    at renderData (/Users/saifas/Freshworks/freshapps_sdk/lib/event_handler/framework.js:192:20)
+    at Object.afterAppUpdateHandler (server.js:351:7)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2022-09-07 14:00:18.950 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 15:02:21.374 +0530 [info] 
+NOTE: We recommend a coverage of 80% for apps that are to be published in the public marketplace.
+2022-09-07 15:05:02.872 +0530 [debug] ([34mconfigs.js[0m) [31mloaded default configs as "{"updates":{"manifest_url":"https://ws.freshcloud.io/cli/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020}}"[0m
+2022-09-07 15:05:02.874 +0530 [debug] ([34mfile-util.js[0m) [31mError while requiring /Users/saifas/.fdk/configs.json: Cannot find module '/Users/saifas/.fdk/configs.json'
+Require stack:
+- /Users/saifas/Freshworks/freshapps_sdk/lib/utils/file-util.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/configs.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/logger.js
+- /Users/saifas/Freshworks/freshapps_sdk/index.js[0m
+2022-09-07 15:05:02.875 +0530 [debug] ([34mconfigs.js[0m) [31mloaded global configs as "{}"[0m
+2022-09-07 15:05:02.875 +0530 [debug] ([34mfile-util.js[0m) [31mError while requiring /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/.fdk/configs.json: Cannot find module '/Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/.fdk/configs.json'
+Require stack:
+- /Users/saifas/Freshworks/freshapps_sdk/lib/utils/file-util.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/configs.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/logger.js
+- /Users/saifas/Freshworks/freshapps_sdk/index.js[0m
+2022-09-07 15:05:02.875 +0530 [debug] ([34mconfigs.js[0m) [31mloaded local configs as "{}"[0m
+2022-09-07 15:05:02.875 +0530 [debug] ([34mconfigs.js[0m) [31mloaded env configs as "{"updates":{},"log":{},"javascript":{}}"[0m
+2022-09-07 15:05:02.875 +0530 [debug] ([34mconfigs.js[0m) [31mloaded resolved configs as "{"updates":{"manifest_url":"https://ws.freshcloud.io/cli/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020}}"[0m
+2022-09-07 15:05:02.875 +0530 [debug] ([34mlogger.js[0m) [31mStarting FDK in node v14.19.3 on darwin[0m
+2022-09-07 15:05:02.876 +0530 [debug] ([34msequelize.js[0m) [31msetting up sqilite at "/Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/.fdk/store.sqlite"[0m
+2022-09-07 15:05:02.876 +0530 [debug] ([34mindex.js[0m) [31mRunning with args {"cmd":null,"gopts":{},"opts":{},"goptArg":{},"optArg":{},"args":[]}[0m
+2022-09-07 15:05:02.876 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by August 31, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshcloud.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.4.0","command":"npm install https://dl.freshcloud.io/cli/fdk.tgz -g","message":""}},"addon":{"version":"2.0.0","url":"https://dl.freshcloud.io/cli-addon/addon-2.0.0.zip"}},"last_updated":{"time_stamp":1661768522732}}[0m
+2022-09-07 15:05:02.876 +0530 [debug] ([34mupdater.js[0m) [31msaw --skip-update-check flag, skipping update check[0m
+2022-09-07 15:05:02.879 +0530 [info] Installed: 8.6.0
+2022-09-07 15:05:49.672 +0530 [debug] ([34mconfigs.js[0m) [31mloaded default configs as "{"updates":{"manifest_url":"https://ws.freshcloud.io/cli/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020}}"[0m
+2022-09-07 15:05:49.676 +0530 [debug] ([34mfile-util.js[0m) [31mError while requiring /Users/saifas/.fdk/configs.json: Cannot find module '/Users/saifas/.fdk/configs.json'
+Require stack:
+- /Users/saifas/Freshworks/freshapps_sdk/lib/utils/file-util.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/configs.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/logger.js
+- /Users/saifas/Freshworks/freshapps_sdk/index.js[0m
+2022-09-07 15:05:49.676 +0530 [debug] ([34mconfigs.js[0m) [31mloaded global configs as "{}"[0m
+2022-09-07 15:05:49.676 +0530 [debug] ([34mfile-util.js[0m) [31mError while requiring /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/.fdk/configs.json: Cannot find module '/Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/.fdk/configs.json'
+Require stack:
+- /Users/saifas/Freshworks/freshapps_sdk/lib/utils/file-util.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/configs.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/logger.js
+- /Users/saifas/Freshworks/freshapps_sdk/index.js[0m
+2022-09-07 15:05:49.676 +0530 [debug] ([34mconfigs.js[0m) [31mloaded local configs as "{}"[0m
+2022-09-07 15:05:49.677 +0530 [debug] ([34mconfigs.js[0m) [31mloaded env configs as "{"updates":{},"log":{},"javascript":{}}"[0m
+2022-09-07 15:05:49.677 +0530 [debug] ([34mconfigs.js[0m) [31mloaded resolved configs as "{"updates":{"manifest_url":"https://ws.freshcloud.io/cli/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020}}"[0m
+2022-09-07 15:05:49.677 +0530 [debug] ([34mlogger.js[0m) [31mStarting FDK in node v14.19.3 on darwin[0m
+2022-09-07 15:05:49.677 +0530 [debug] ([34msequelize.js[0m) [31msetting up sqilite at "/Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/.fdk/store.sqlite"[0m
+2022-09-07 15:05:49.677 +0530 [debug] ([34mindex.js[0m) [31mRunning with args {"cmd":"run","gopts":{},"opts":{},"goptArg":{},"optArg":{},"args":[]}[0m
+2022-09-07 15:05:49.677 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by August 31, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshcloud.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.4.0","command":"npm install https://dl.freshcloud.io/cli/fdk.tgz -g","message":""}},"addon":{"version":"2.0.0","url":"https://dl.freshcloud.io/cli-addon/addon-2.0.0.zip"}},"last_updated":{"time_stamp":1661768522732}}[0m
+2022-09-07 15:05:49.677 +0530 [debug] ([34mupdater.js[0m) [31mlast check more than 24 hours ago, looking for updates again[0m
+2022-09-07 15:05:50.226 +0530 [debug] ([34mindex.js[0m) [31mError: self signed certificate in certificate chain
+    at TLSSocket.onConnectSecure (_tls_wrap.js:1515:34)
+    at TLSSocket.emit (events.js:400:28)
+    at TLSSocket._finishInit (_tls_wrap.js:937:8)
+    at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:709:12)[0m
+2022-09-07 15:05:50.226 +0530 [error] self signed certificate in certificate chain
+2022-09-07 15:05:50.708 +0530 [debug] ([34mmanifest.js[0m) [31mReloading manifest with {"platform-version":"2.2","product":{"freshdesk":{"location":{"ticket_sidebar":{"url":"index.html","icon":"styles/images/icon.svg"}},"events":{"afterAppUpdate":{"handler":"afterAppUpdateHandler"},"onAppInstall":{"handler":"onAppInstallHandler"},"onScheduledEvent":{"handler":"onScheduledEventHandler"}}}},"whitelisted-domains":[],"engines":{"node":"14.19.3","fdk":"8.5.0"}}.[0m
+2022-09-07 15:05:50.708 +0530 [debug] ([34mmanifest.js[0m) [31mInferred db,backend as features.[0m
+2022-09-07 15:05:50.713 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by August 31, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshcloud.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.4.0","command":"npm install https://dl.freshcloud.io/cli/fdk.tgz -g","message":""}},"addon":{"version":"2.0.0","url":"https://dl.freshcloud.io/cli-addon/addon-2.0.0.zip"}},"last_updated":{"time_stamp":1661768522732}}[0m
+2022-09-07 15:05:50.746 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by August 31, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshcloud.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.4.0","command":"npm install https://dl.freshcloud.io/cli/fdk.tgz -g","message":""}},"addon":{"version":"2.0.0","url":"https://dl.freshcloud.io/cli-addon/addon-2.0.0.zip"}},"last_updated":{"time_stamp":1661768522732}}[0m
+2022-09-07 15:05:53.017 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by August 31, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshcloud.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.4.0","command":"npm install https://dl.freshcloud.io/cli/fdk.tgz -g","message":""}},"addon":{"version":"2.0.0","url":"https://dl.freshcloud.io/cli-addon/addon-2.0.0.zip"}},"last_updated":{"time_stamp":1661768522732}}[0m
+2022-09-07 15:05:54.721 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2022-09-07 15:05:54.722 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator actions[0m
+2022-09-07 15:05:54.723 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-dir[0m
+2022-09-07 15:05:54.724 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator config-dir[0m
+2022-09-07 15:05:54.724 +0530 [debug] ([34mconfig-dir.js[0m) [31mChecking to see if /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/config/ exists.[0m
+2022-09-07 15:05:54.725 +0530 [debug] ([34mconfig-dir.js[0m) [31mFetched the following config files iparams.json[0m
+2022-09-07 15:05:54.725 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator custom-objects[0m
+2022-09-07 15:05:54.725 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator event[0m
+2022-09-07 15:05:54.739 +0530 [debug] ([34mevent-util.js[0m) [31mFound ["afterAppUpdateHandler","onAppInstallHandler","onScheduledEventHandler"] as exported functions.[0m
+2022-09-07 15:05:54.740 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator iparam[0m
+2022-09-07 15:05:54.744 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator lint[0m
+2022-09-07 15:05:54.744 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest[0m
+2022-09-07 15:05:54.745 +0530 [debug] ([34mmanifest.js[0m) [31mrunning manifest validation with type run_validation[0m
+2022-09-07 15:05:54.745 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest-dependency[0m
+2022-09-07 15:05:54.745 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator oauth[0m
+2022-09-07 15:05:54.745 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator pkgsize[0m
+2022-09-07 15:05:54.745 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator schema[0m
+2022-09-07 15:05:54.746 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator version-check[0m
+2022-09-07 15:05:54.752 +0530 [debug] ([34mwatcher.js[0m) [31mPreparing to watch the following files ./app,./config,./manifest.json[0m
+2022-09-07 15:05:54.758 +0530 [debug] ([34minstall-util.js[0m) [31mdependency installer called with {}[0m
+2022-09-07 15:05:54.759 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"aftera_101_101_schedule_syncSchedule_freshdesk":{"name":"syncSchedule","schedule_at":"2022-09-09T03:47:00.000Z","repeat":{"time_unit":"minutes","frequency":10,"timezone":"UTC"},"data":{"desc":"This data will be passed as argument to handler"}}}[0m
+2022-09-07 15:05:54.759 +0530 [debug] ([34mcustom-objects.js[0m) [31mto force or not? false[0m
+2022-09-07 15:05:54.759 +0530 [debug] ([34mcustom-objects.js[0m) [31mbeginning to re-sync db[0m
+2022-09-07 15:05:55.050 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/bigint-pivot.js"[0m
+2022-09-07 15:05:55.052 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/entity-field-choice.js"[0m
+2022-09-07 15:05:55.053 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/entity-field.js"[0m
+2022-09-07 15:05:55.055 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/entity.js"[0m
+2022-09-07 15:05:55.056 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/record.js"[0m
+2022-09-07 15:05:55.057 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/string-pivot.js"[0m
+2022-09-07 15:05:55.081 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"aftera_101_101_schedule_syncSchedule_freshdesk":{"name":"syncSchedule","schedule_at":"2022-09-09T03:47:00.000Z","repeat":{"time_unit":"minutes","frequency":10,"timezone":"UTC"},"data":{"desc":"This data will be passed as argument to handler"}}}[0m
+2022-09-07 15:05:55.082 +0530 [debug] ([34mcustom-objects.js[0m) [31mupdated local store with latest entity hash[0m
+2022-09-07 15:05:55.083 +0530 [info] Starting local testing server at http://*:10001/    
+Append 'dev=true' to your Freshdesk account URL to start testing    
+e.g. https://domain.freshdesk.com/a/tickets/1?dev=true    
+Quit the server with Control-C.
+2022-09-07 15:05:55.083 +0530 [info] 
+To simulate product, app setup, and external events, visit - http://localhost:10001/web/test
+2022-09-07 15:05:55.083 +0530 [info] Populating test data with events found in the app
+2022-09-07 15:06:11.241 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"aftera_101_101_schedule_syncSchedule_freshdesk":{"name":"syncSchedule","schedule_at":"2022-09-09T03:47:00.000Z","repeat":{"time_unit":"minutes","frequency":10,"timezone":"UTC"},"data":{"desc":"This data will be passed as argument to handler"}}}[0m
+2022-09-07 15:06:11.242 +0530 [debug] ([34miframe.js[0m) [31mResponding to product with {"configs":{},"displayName":"afterAppUpdate","product":{"freshdesk":{"location":{"ticket_sidebar":{"url":"agent/index.html","icon":"agent/styles/images/icon.svg"}},"events":{"afterAppUpdate":{"handler":"afterAppUpdateHandler"},"onAppInstall":{"handler":"onAppInstallHandler"},"onScheduledEvent":{"handler":"onScheduledEventHandler"}}}},"features":["db","backend"],"actions":false,"omni":false,"products":["freshdesk"],"platform":"2.2","v2":[]}[0m
+2022-09-07 15:06:11.278 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"aftera_101_101_schedule_syncSchedule_freshdesk":{"name":"syncSchedule","schedule_at":"2022-09-09T03:47:00.000Z","repeat":{"time_unit":"minutes","frequency":10,"timezone":"UTC"},"data":{"desc":"This data will be passed as argument to handler"}}}[0m
+2022-09-07 15:06:11.279 +0530 [debug] ([34miframe.js[0m) [31mResponding to product with {"configs":{},"displayName":"afterAppUpdate","product":{"freshdesk":{"location":{"ticket_sidebar":{"url":"agent/index.html","icon":"agent/styles/images/icon.svg"}},"events":{"afterAppUpdate":{"handler":"afterAppUpdateHandler"},"onAppInstall":{"handler":"onAppInstallHandler"},"onScheduledEvent":{"handler":"onScheduledEventHandler"}}}},"features":["db","backend"],"actions":false,"omni":false,"products":["freshdesk"],"platform":"2.2","v2":[]}[0m
+2022-09-07 15:06:11.283 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"aftera_101_101_schedule_syncSchedule_freshdesk":{"name":"syncSchedule","schedule_at":"2022-09-09T03:47:00.000Z","repeat":{"time_unit":"minutes","frequency":10,"timezone":"UTC"},"data":{"desc":"This data will be passed as argument to handler"}}}[0m
+2022-09-07 15:06:11.284 +0530 [debug] ([34miframe.js[0m) [31mResponding to product with {"configs":{},"displayName":"afterAppUpdate","product":{"freshdesk":{"location":{"ticket_sidebar":{"url":"agent/index.html","icon":"agent/styles/images/icon.svg"}},"events":{"afterAppUpdate":{"handler":"afterAppUpdateHandler"},"onAppInstall":{"handler":"onAppInstallHandler"},"onScheduledEvent":{"handler":"onScheduledEventHandler"}}}},"features":["db","backend"],"actions":false,"omni":false,"products":["freshdesk"],"platform":"2.2","v2":[]}[0m
+2022-09-07 15:06:16.685 +0530 [debug] ([34mevent-util.js[0m) [31mFound ["afterAppUpdateHandler","onAppInstallHandler","onScheduledEventHandler"] as exported functions.[0m
+2022-09-07 15:06:57.749 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"aftera_101_101_schedule_syncSchedule_freshdesk":{"name":"syncSchedule","schedule_at":"2022-09-09T03:47:00.000Z","repeat":{"time_unit":"minutes","frequency":10,"timezone":"UTC"},"data":{"desc":"This data will be passed as argument to handler"}}}[0m
+2022-09-07 15:06:57.749 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 15:06:57.750 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"appEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 15:06:57.750 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 15:06:57.825 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"aftera_101_101_schedule_syncSchedule_freshdesk":{"name":"syncSchedule","schedule_at":"2022-09-09T03:47:00.000Z","repeat":{"time_unit":"minutes","frequency":10,"timezone":"UTC"},"data":{"desc":"This data will be passed as argument to handler"}}}[0m
+2022-09-07 15:06:58.328 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 15:07:24.629 +0530 [debug] ([34mdata-util.js[0m) [31mError while reading localstore Unexpected end of JSON input[0m
+2022-09-07 15:07:24.630 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 15:07:24.630 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"appEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 15:07:24.631 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 15:07:24.664 +0530 [debug] ([34mdata-util.js[0m) [31mError while reading localstore Unexpected end of JSON input[0m
+2022-09-07 15:07:25.168 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 15:07:34.669 +0530 [error] `renderData` was not called in the callback within time limit!
+2022-09-07 15:08:36.150 +0530 [debug] ([34mdata-util.js[0m) [31mError while reading localstore Unexpected end of JSON input[0m
+2022-09-07 15:08:36.150 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 15:08:36.150 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"appEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 15:08:36.150 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 15:08:36.184 +0530 [debug] ([34mdata-util.js[0m) [31mError while reading localstore Unexpected end of JSON input[0m
+2022-09-07 15:08:36.687 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 15:09:13.207 +0530 [info] 
+NOTE: We recommend a coverage of 80% for apps that are to be published in the public marketplace.
+2022-09-07 15:09:15.121 +0530 [debug] ([34mconfigs.js[0m) [31mloaded default configs as "{"updates":{"manifest_url":"https://ws.freshcloud.io/cli/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020}}"[0m
+2022-09-07 15:09:15.124 +0530 [debug] ([34mfile-util.js[0m) [31mError while requiring /Users/saifas/.fdk/configs.json: Cannot find module '/Users/saifas/.fdk/configs.json'
+Require stack:
+- /Users/saifas/Freshworks/freshapps_sdk/lib/utils/file-util.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/configs.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/logger.js
+- /Users/saifas/Freshworks/freshapps_sdk/index.js[0m
+2022-09-07 15:09:15.124 +0530 [debug] ([34mconfigs.js[0m) [31mloaded global configs as "{}"[0m
+2022-09-07 15:09:15.124 +0530 [debug] ([34mfile-util.js[0m) [31mError while requiring /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/.fdk/configs.json: Cannot find module '/Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/.fdk/configs.json'
+Require stack:
+- /Users/saifas/Freshworks/freshapps_sdk/lib/utils/file-util.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/configs.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/logger.js
+- /Users/saifas/Freshworks/freshapps_sdk/index.js[0m
+2022-09-07 15:09:15.124 +0530 [debug] ([34mconfigs.js[0m) [31mloaded local configs as "{}"[0m
+2022-09-07 15:09:15.125 +0530 [debug] ([34mconfigs.js[0m) [31mloaded env configs as "{"updates":{},"log":{},"javascript":{}}"[0m
+2022-09-07 15:09:15.129 +0530 [debug] ([34mconfigs.js[0m) [31mloaded resolved configs as "{"updates":{"manifest_url":"https://ws.freshcloud.io/cli/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020}}"[0m
+2022-09-07 15:09:15.129 +0530 [debug] ([34mlogger.js[0m) [31mStarting FDK in node v14.19.3 on darwin[0m
+2022-09-07 15:09:15.129 +0530 [debug] ([34msequelize.js[0m) [31msetting up sqilite at "/Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/.fdk/store.sqlite"[0m
+2022-09-07 15:09:15.129 +0530 [debug] ([34mindex.js[0m) [31mRunning with args {"cmd":"run","gopts":{},"opts":{},"goptArg":{},"optArg":{},"args":[]}[0m
+2022-09-07 15:09:15.129 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by August 31, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshcloud.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.4.0","command":"npm install https://dl.freshcloud.io/cli/fdk.tgz -g","message":""}},"addon":{"version":"2.0.0","url":"https://dl.freshcloud.io/cli-addon/addon-2.0.0.zip"}},"last_updated":{"time_stamp":1661768522732}}[0m
+2022-09-07 15:09:15.129 +0530 [debug] ([34mupdater.js[0m) [31mlast check more than 24 hours ago, looking for updates again[0m
+2022-09-07 15:09:15.832 +0530 [debug] ([34mindex.js[0m) [31mError: self signed certificate in certificate chain
+    at TLSSocket.onConnectSecure (_tls_wrap.js:1515:34)
+    at TLSSocket.emit (events.js:400:28)
+    at TLSSocket._finishInit (_tls_wrap.js:937:8)
+    at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:709:12)[0m
+2022-09-07 15:09:15.833 +0530 [error] self signed certificate in certificate chain
+2022-09-07 15:09:16.188 +0530 [debug] ([34mmanifest.js[0m) [31mReloading manifest with {"platform-version":"2.2","product":{"freshdesk":{"location":{"ticket_sidebar":{"url":"index.html","icon":"styles/images/icon.svg"}},"events":{"afterAppUpdate":{"handler":"afterAppUpdateHandler"},"onAppInstall":{"handler":"onAppInstallHandler"},"onScheduledEvent":{"handler":"onScheduledEventHandler"}}}},"whitelisted-domains":[],"engines":{"node":"14.19.3","fdk":"8.5.0"}}.[0m
+2022-09-07 15:09:16.188 +0530 [debug] ([34mmanifest.js[0m) [31mInferred db,backend as features.[0m
+2022-09-07 15:09:16.191 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by August 31, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshcloud.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.4.0","command":"npm install https://dl.freshcloud.io/cli/fdk.tgz -g","message":""}},"addon":{"version":"2.0.0","url":"https://dl.freshcloud.io/cli-addon/addon-2.0.0.zip"}},"last_updated":{"time_stamp":1661768522732}}[0m
+2022-09-07 15:09:16.230 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by August 31, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshcloud.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.4.0","command":"npm install https://dl.freshcloud.io/cli/fdk.tgz -g","message":""}},"addon":{"version":"2.0.0","url":"https://dl.freshcloud.io/cli-addon/addon-2.0.0.zip"}},"last_updated":{"time_stamp":1661768522732}}[0m
+2022-09-07 15:09:18.012 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by August 31, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshcloud.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.4.0","command":"npm install https://dl.freshcloud.io/cli/fdk.tgz -g","message":""}},"addon":{"version":"2.0.0","url":"https://dl.freshcloud.io/cli-addon/addon-2.0.0.zip"}},"last_updated":{"time_stamp":1661768522732}}[0m
+2022-09-07 15:09:19.222 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2022-09-07 15:09:19.223 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator actions[0m
+2022-09-07 15:09:19.224 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-dir[0m
+2022-09-07 15:09:19.225 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator config-dir[0m
+2022-09-07 15:09:19.225 +0530 [debug] ([34mconfig-dir.js[0m) [31mChecking to see if /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/config/ exists.[0m
+2022-09-07 15:09:19.226 +0530 [debug] ([34mconfig-dir.js[0m) [31mFetched the following config files iparams.json[0m
+2022-09-07 15:09:19.226 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator custom-objects[0m
+2022-09-07 15:09:19.226 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator event[0m
+2022-09-07 15:09:19.239 +0530 [debug] ([34mevent-util.js[0m) [31mFound ["afterAppUpdateHandler","onAppInstallHandler","onScheduledEventHandler"] as exported functions.[0m
+2022-09-07 15:09:19.240 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator iparam[0m
+2022-09-07 15:09:19.244 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator lint[0m
+2022-09-07 15:09:19.244 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest[0m
+2022-09-07 15:09:19.244 +0530 [debug] ([34mmanifest.js[0m) [31mrunning manifest validation with type run_validation[0m
+2022-09-07 15:09:19.244 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest-dependency[0m
+2022-09-07 15:09:19.244 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator oauth[0m
+2022-09-07 15:09:19.245 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator pkgsize[0m
+2022-09-07 15:09:19.245 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator schema[0m
+2022-09-07 15:09:19.245 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator version-check[0m
+2022-09-07 15:09:19.251 +0530 [debug] ([34mwatcher.js[0m) [31mPreparing to watch the following files ./app,./config,./manifest.json[0m
+2022-09-07 15:09:19.256 +0530 [debug] ([34minstall-util.js[0m) [31mdependency installer called with {}[0m
+2022-09-07 15:09:19.257 +0530 [debug] ([34mdata-util.js[0m) [31mError while reading localstore Unexpected end of JSON input[0m
+2022-09-07 15:09:19.257 +0530 [debug] ([34mcustom-objects.js[0m) [31mto force or not? false[0m
+2022-09-07 15:09:19.257 +0530 [debug] ([34mcustom-objects.js[0m) [31mbeginning to re-sync db[0m
+2022-09-07 15:09:19.445 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/bigint-pivot.js"[0m
+2022-09-07 15:09:19.448 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/entity-field-choice.js"[0m
+2022-09-07 15:09:19.449 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/entity-field.js"[0m
+2022-09-07 15:09:19.450 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/entity.js"[0m
+2022-09-07 15:09:19.452 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/record.js"[0m
+2022-09-07 15:09:19.453 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/string-pivot.js"[0m
+2022-09-07 15:09:19.474 +0530 [debug] ([34mdata-util.js[0m) [31mError while reading localstore Unexpected end of JSON input[0m
+2022-09-07 15:09:19.475 +0530 [debug] ([34mcustom-objects.js[0m) [31mupdated local store with latest entity hash[0m
+2022-09-07 15:09:19.476 +0530 [info] Starting local testing server at http://*:10001/    
+Append 'dev=true' to your Freshdesk account URL to start testing    
+e.g. https://domain.freshdesk.com/a/tickets/1?dev=true    
+Quit the server with Control-C.
+2022-09-07 15:09:19.476 +0530 [info] 
+To simulate product, app setup, and external events, visit - http://localhost:10001/web/test
+2022-09-07 15:09:19.476 +0530 [info] Populating test data with events found in the app
+2022-09-07 15:09:28.098 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 15:09:28.098 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 15:09:28.099 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"appEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 15:09:28.099 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 15:09:28.172 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 15:09:28.675 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 15:10:26.667 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 15:10:26.667 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 15:10:26.667 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"appEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 15:10:26.667 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 15:10:26.711 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 15:10:27.211 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 15:10:30.156 +0530 [info] 
+NOTE: We recommend a coverage of 80% for apps that are to be published in the public marketplace.
+2022-09-07 15:10:31.998 +0530 [debug] ([34mconfigs.js[0m) [31mloaded default configs as "{"updates":{"manifest_url":"https://ws.freshcloud.io/cli/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020}}"[0m
+2022-09-07 15:10:32.002 +0530 [debug] ([34mfile-util.js[0m) [31mError while requiring /Users/saifas/.fdk/configs.json: Cannot find module '/Users/saifas/.fdk/configs.json'
+Require stack:
+- /Users/saifas/Freshworks/freshapps_sdk/lib/utils/file-util.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/configs.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/logger.js
+- /Users/saifas/Freshworks/freshapps_sdk/index.js[0m
+2022-09-07 15:10:32.003 +0530 [debug] ([34mconfigs.js[0m) [31mloaded global configs as "{}"[0m
+2022-09-07 15:10:32.003 +0530 [debug] ([34mfile-util.js[0m) [31mError while requiring /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/.fdk/configs.json: Cannot find module '/Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/.fdk/configs.json'
+Require stack:
+- /Users/saifas/Freshworks/freshapps_sdk/lib/utils/file-util.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/configs.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/logger.js
+- /Users/saifas/Freshworks/freshapps_sdk/index.js[0m
+2022-09-07 15:10:32.003 +0530 [debug] ([34mconfigs.js[0m) [31mloaded local configs as "{}"[0m
+2022-09-07 15:10:32.003 +0530 [debug] ([34mconfigs.js[0m) [31mloaded env configs as "{"updates":{},"log":{},"javascript":{}}"[0m
+2022-09-07 15:10:32.003 +0530 [debug] ([34mconfigs.js[0m) [31mloaded resolved configs as "{"updates":{"manifest_url":"https://ws.freshcloud.io/cli/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020}}"[0m
+2022-09-07 15:10:32.003 +0530 [debug] ([34mlogger.js[0m) [31mStarting FDK in node v14.19.3 on darwin[0m
+2022-09-07 15:10:32.004 +0530 [debug] ([34msequelize.js[0m) [31msetting up sqilite at "/Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/.fdk/store.sqlite"[0m
+2022-09-07 15:10:32.004 +0530 [debug] ([34mindex.js[0m) [31mRunning with args {"cmd":"run","gopts":{},"opts":{},"goptArg":{},"optArg":{},"args":[]}[0m
+2022-09-07 15:10:32.004 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by August 31, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshcloud.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.4.0","command":"npm install https://dl.freshcloud.io/cli/fdk.tgz -g","message":""}},"addon":{"version":"2.0.0","url":"https://dl.freshcloud.io/cli-addon/addon-2.0.0.zip"}},"last_updated":{"time_stamp":1661768522732}}[0m
+2022-09-07 15:10:32.004 +0530 [debug] ([34mupdater.js[0m) [31mlast check more than 24 hours ago, looking for updates again[0m
+2022-09-07 15:10:32.541 +0530 [debug] ([34mindex.js[0m) [31mError: self signed certificate in certificate chain
+    at TLSSocket.onConnectSecure (_tls_wrap.js:1515:34)
+    at TLSSocket.emit (events.js:400:28)
+    at TLSSocket._finishInit (_tls_wrap.js:937:8)
+    at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:709:12)[0m
+2022-09-07 15:10:32.541 +0530 [error] self signed certificate in certificate chain
+2022-09-07 15:10:32.831 +0530 [debug] ([34mmanifest.js[0m) [31mReloading manifest with {"platform-version":"2.2","product":{"freshdesk":{"location":{"ticket_sidebar":{"url":"index.html","icon":"styles/images/icon.svg"}},"events":{"afterAppUpdate":{"handler":"afterAppUpdateHandler"},"onAppInstall":{"handler":"onAppInstallHandler"},"onScheduledEvent":{"handler":"onScheduledEventHandler"}}}},"whitelisted-domains":[],"engines":{"node":"14.19.3","fdk":"8.5.0"}}.[0m
+2022-09-07 15:10:32.831 +0530 [debug] ([34mmanifest.js[0m) [31mInferred db,backend as features.[0m
+2022-09-07 15:10:32.833 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by August 31, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshcloud.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.4.0","command":"npm install https://dl.freshcloud.io/cli/fdk.tgz -g","message":""}},"addon":{"version":"2.0.0","url":"https://dl.freshcloud.io/cli-addon/addon-2.0.0.zip"}},"last_updated":{"time_stamp":1661768522732}}[0m
+2022-09-07 15:10:32.857 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by August 31, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshcloud.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.4.0","command":"npm install https://dl.freshcloud.io/cli/fdk.tgz -g","message":""}},"addon":{"version":"2.0.0","url":"https://dl.freshcloud.io/cli-addon/addon-2.0.0.zip"}},"last_updated":{"time_stamp":1661768522732}}[0m
+2022-09-07 15:10:34.361 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by August 31, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshcloud.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.4.0","command":"npm install https://dl.freshcloud.io/cli/fdk.tgz -g","message":""}},"addon":{"version":"2.0.0","url":"https://dl.freshcloud.io/cli-addon/addon-2.0.0.zip"}},"last_updated":{"time_stamp":1661768522732}}[0m
+2022-09-07 15:10:35.369 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2022-09-07 15:10:35.370 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator actions[0m
+2022-09-07 15:10:35.370 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-dir[0m
+2022-09-07 15:10:35.371 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator config-dir[0m
+2022-09-07 15:10:35.372 +0530 [debug] ([34mconfig-dir.js[0m) [31mChecking to see if /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/config/ exists.[0m
+2022-09-07 15:10:35.372 +0530 [debug] ([34mconfig-dir.js[0m) [31mFetched the following config files iparams.json[0m
+2022-09-07 15:10:35.372 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator custom-objects[0m
+2022-09-07 15:10:35.372 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator event[0m
+2022-09-07 15:10:35.383 +0530 [debug] ([34mevent-util.js[0m) [31mFound ["afterAppUpdateHandler","onAppInstallHandler","onScheduledEventHandler"] as exported functions.[0m
+2022-09-07 15:10:35.384 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator iparam[0m
+2022-09-07 15:10:35.387 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator lint[0m
+2022-09-07 15:10:35.387 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest[0m
+2022-09-07 15:10:35.387 +0530 [debug] ([34mmanifest.js[0m) [31mrunning manifest validation with type run_validation[0m
+2022-09-07 15:10:35.387 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest-dependency[0m
+2022-09-07 15:10:35.388 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator oauth[0m
+2022-09-07 15:10:35.388 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator pkgsize[0m
+2022-09-07 15:10:35.388 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator schema[0m
+2022-09-07 15:10:35.388 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator version-check[0m
+2022-09-07 15:10:35.393 +0530 [debug] ([34mwatcher.js[0m) [31mPreparing to watch the following files ./app,./config,./manifest.json[0m
+2022-09-07 15:10:35.398 +0530 [debug] ([34minstall-util.js[0m) [31mdependency installer called with {}[0m
+2022-09-07 15:10:35.398 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 15:10:35.399 +0530 [debug] ([34mcustom-objects.js[0m) [31mto force or not? false[0m
+2022-09-07 15:10:35.399 +0530 [debug] ([34mcustom-objects.js[0m) [31mbeginning to re-sync db[0m
+2022-09-07 15:10:35.561 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/bigint-pivot.js"[0m
+2022-09-07 15:10:35.563 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/entity-field-choice.js"[0m
+2022-09-07 15:10:35.563 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/entity-field.js"[0m
+2022-09-07 15:10:35.564 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/entity.js"[0m
+2022-09-07 15:10:35.565 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/record.js"[0m
+2022-09-07 15:10:35.566 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/string-pivot.js"[0m
+2022-09-07 15:10:35.587 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 15:10:35.587 +0530 [debug] ([34mcustom-objects.js[0m) [31mupdated local store with latest entity hash[0m
+2022-09-07 15:10:35.588 +0530 [info] Starting local testing server at http://*:10001/    
+Append 'dev=true' to your Freshdesk account URL to start testing    
+e.g. https://domain.freshdesk.com/a/tickets/1?dev=true    
+Quit the server with Control-C.
+2022-09-07 15:10:35.588 +0530 [info] 
+To simulate product, app setup, and external events, visit - http://localhost:10001/web/test
+2022-09-07 15:10:35.588 +0530 [info] Populating test data with events found in the app
+2022-09-07 15:10:38.097 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 15:10:38.098 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 15:10:38.098 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"appEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 15:10:38.098 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 15:10:38.174 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 15:10:38.677 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 15:11:00.524 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 15:11:00.525 +0530 [debug] ([34mbeevents.js[0m) [31mUsing {} as iparams for testing.[0m
+2022-09-07 15:11:00.525 +0530 [debug] ([34mbeevents.js[0m) [31mCalling event handler with {"categoryName":"appEvent","categoryArgs":{"methodName":"afterAppUpdate","methodParams":{"timestamp":1496400354326,"account_id":"13","domain":"https://sample.freshservice.com","event":"afterAppUpdate","region":"US","iparams":{}}}}[0m
+2022-09-07 15:11:00.525 +0530 [debug] ([34mcoverage-util.js[0m) [31mInstrumenting /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/server/server.js[0m
+2022-09-07 15:11:00.565 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-07 15:11:01.069 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
+2022-09-07 15:13:05.610 +0530 [info] 
+NOTE: We recommend a coverage of 80% for apps that are to be published in the public marketplace.
