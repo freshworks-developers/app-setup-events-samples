@@ -1,5 +1,7 @@
 ## afterAppUpdate
 
-A sample app that checks there's a recurring schedule in the previous installation and tries to halts the update if recurring schedule is still running.
+This is a same code that demonstrates the use of `afterAppUpdate` app setup event.
+
+Developers can use this hook to tie any logic when users manually update their app on the Freshworks Marketplace.
 
 
