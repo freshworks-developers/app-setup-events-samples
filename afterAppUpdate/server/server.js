@@ -11,7 +11,7 @@ exports = {
               renderData();
 
             // if desired logic or verfication doesn't work
-            // throw error deliberately: throw new Error('No Schedule found. Installation Halt');
+            // throw error deliberately: throw new Error('Migration in progress. Try later');
           }
 
       } catch (error) {
