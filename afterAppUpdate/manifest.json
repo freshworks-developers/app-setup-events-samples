@@ -12,18 +12,18 @@
         "afterAppUpdate": {
           "handler": "afterAppUpdateHandler"
         },
-        "onAppInstall":{
+        "onAppInstall": {
           "handler": "onAppInstallHandler"
         },
-        "onScheduledEvent":{
-          "handler":"onScheduledEventHandler"
+        "onScheduledEvent": {
+          "handler": "onScheduledEventHandler"
         }
       }
     }
   },
   "whitelisted-domains": [],
   "engines": {
-    "node": "14.19.3",
-    "fdk": "8.5.0"
+    "node": "14.20.0",
+    "fdk": "8.6.4"
   }
 }

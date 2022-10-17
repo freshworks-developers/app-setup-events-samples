@@ -21,7 +21,7 @@ exports = {
     },
     onAppInstallHandler: async function (args) {
         // 1. create a schedule
-        let pointInfuture = new Date('September 9, 2022 09:17:00');
+        let pointInfuture = new Date('November 9, 2022 09:17:00');
 
         let scheduleOpts = {
             name: "syncSchedule",
@@ -37,6 +37,7 @@ exports = {
          try {
              let { status } = await $schedule.create(scheduleOpts);
              if (status != 200) throw new Error('unable to create a schedule');
+             console.info('Schedule is created successfully');
              renderData();
             } catch (error) {
              renderData({ message: String(error.message) })
