@@ -1,13 +1,7 @@
 {
-  "platform-version": "2.2",
-  "product": {
-    "freshdesk": {
-      "location": {
-        "ticket_sidebar": {
-          "url": "index.html",
-          "icon": "styles/images/icon.svg"
-        }
-      },
+  "platform-version": "3.0",
+  "modules": {
+    "common": {
       "events": {
         "afterAppUpdate": {
           "handler": "afterAppUpdateHandler"
@@ -19,11 +13,21 @@
           "handler": "onScheduledEventHandler"
         }
       }
+    },
+    "support_ticket": {
+      "location": {
+        "ticket_sidebar": {
+          "url": "index.html",
+          "icon": "styles/images/icon.svg"
+        }
+      }
     }
   },
-  "whitelisted-domains": [],
   "engines": {
-    "node": "14.20.0",
-    "fdk": "8.6.4"
+    "node": "18.16.0",
+    "fdk": "9.1.0"
+  },
+  "dependencies": {
+    "nodemon": "1.14.12"
   }
 }

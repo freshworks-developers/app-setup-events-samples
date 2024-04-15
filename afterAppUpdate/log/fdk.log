@@ -3480,3 +3480,76 @@ To simulate product, app setup, and external events, visit - http://localhost:10
 2022-09-08 09:24:11.763 +0530 [debug] ([34mcoverage-util.js[0m) [31mWriting coverage.[0m
 2022-09-08 09:24:17.355 +0530 [info] 
 NOTE: We recommend a coverage of 80% for apps that are to be published in the public marketplace.
+2022-09-14 15:12:21.953 +0530 [debug] ([34mconfigs.js[0m) [31mloaded default configs as "{"updates":{"manifest_url":"https://ws.freshcloud.io/cli/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020}}"[0m
+2022-09-14 15:12:21.956 +0530 [debug] ([34mfile-util.js[0m) [31mError while requiring /Users/saifas/.fdk/configs.json: Cannot find module '/Users/saifas/.fdk/configs.json'
+Require stack:
+- /Users/saifas/Freshworks/freshapps_sdk/lib/utils/file-util.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/configs.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/logger.js
+- /Users/saifas/Freshworks/freshapps_sdk/index.js[0m
+2022-09-14 15:12:21.956 +0530 [debug] ([34mconfigs.js[0m) [31mloaded global configs as "{}"[0m
+2022-09-14 15:12:21.956 +0530 [debug] ([34mfile-util.js[0m) [31mError while requiring /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/.fdk/configs.json: Cannot find module '/Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/.fdk/configs.json'
+Require stack:
+- /Users/saifas/Freshworks/freshapps_sdk/lib/utils/file-util.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/configs.js
+- /Users/saifas/Freshworks/freshapps_sdk/lib/logger.js
+- /Users/saifas/Freshworks/freshapps_sdk/index.js[0m
+2022-09-14 15:12:21.956 +0530 [debug] ([34mconfigs.js[0m) [31mloaded local configs as "{}"[0m
+2022-09-14 15:12:21.956 +0530 [debug] ([34mconfigs.js[0m) [31mloaded env configs as "{"updates":{},"log":{},"javascript":{}}"[0m
+2022-09-14 15:12:21.956 +0530 [debug] ([34mconfigs.js[0m) [31mloaded resolved configs as "{"updates":{"manifest_url":"https://ws.freshcloud.io/cli/updates.json","period":24},"log":{"level":"info"},"javascript":{"ecma_version":2020}}"[0m
+2022-09-14 15:12:21.956 +0530 [debug] ([34mlogger.js[0m) [31mStarting FDK in node v14.19.3 on darwin[0m
+2022-09-14 15:12:21.957 +0530 [debug] ([34msequelize.js[0m) [31msetting up sqilite at "/Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/.fdk/store.sqlite"[0m
+2022-09-14 15:12:21.957 +0530 [debug] ([34mindex.js[0m) [31mRunning with args {"cmd":"run","gopts":{},"opts":{},"goptArg":{},"optArg":{},"args":[]}[0m
+2022-09-14 15:12:21.957 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by September 30, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.6.0","command":"npm install https://dl.freshdev.io/cli/fdk.tgz -g","message":"You can now use the new app setup event - afterAppUpdate, to carry out appropriate app actions after an app is updated and its latest version is installed. For more information, refer to our documentation at https://developers.freshdesk.com/v2/docs/app-setup-events/#afterappupdate."}},"addon":{"version":"1.11.0","url":"https://dl.freshdev.io/cli-addon/addon-1.11.0.zip"}},"last_updated":{"time_stamp":1662609229556}}[0m
+2022-09-14 15:12:21.957 +0530 [debug] ([34mupdater.js[0m) [31mlast check more than 24 hours ago, looking for updates again[0m
+2022-09-14 15:12:22.377 +0530 [debug] ([34mindex.js[0m) [31mError: self signed certificate in certificate chain
+    at TLSSocket.onConnectSecure (_tls_wrap.js:1515:34)
+    at TLSSocket.emit (events.js:400:28)
+    at TLSSocket._finishInit (_tls_wrap.js:937:8)
+    at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:709:12)[0m
+2022-09-14 15:12:22.377 +0530 [error] self signed certificate in certificate chain
+2022-09-14 15:12:22.693 +0530 [debug] ([34mmanifest.js[0m) [31mReloading manifest with {"platform-version":"2.2","product":{"freshdesk":{"location":{"ticket_sidebar":{"url":"index.html","icon":"styles/images/icon.svg"}},"events":{"afterAppUpdate":{"handler":"afterAppUpdateHandler"},"onAppInstall":{"handler":"onAppInstallHandler"},"onScheduledEvent":{"handler":"onScheduledEventHandler"}}}},"whitelisted-domains":[],"engines":{"node":"14.19.3","fdk":"8.5.0"}}.[0m
+2022-09-14 15:12:22.694 +0530 [debug] ([34mmanifest.js[0m) [31mInferred db,backend as features.[0m
+2022-09-14 15:12:22.696 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by September 30, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.6.0","command":"npm install https://dl.freshdev.io/cli/fdk.tgz -g","message":"You can now use the new app setup event - afterAppUpdate, to carry out appropriate app actions after an app is updated and its latest version is installed. For more information, refer to our documentation at https://developers.freshdesk.com/v2/docs/app-setup-events/#afterappupdate."}},"addon":{"version":"1.11.0","url":"https://dl.freshdev.io/cli-addon/addon-1.11.0.zip"}},"last_updated":{"time_stamp":1662609229556}}[0m
+2022-09-14 15:12:22.724 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by September 30, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.6.0","command":"npm install https://dl.freshdev.io/cli/fdk.tgz -g","message":"You can now use the new app setup event - afterAppUpdate, to carry out appropriate app actions after an app is updated and its latest version is installed. For more information, refer to our documentation at https://developers.freshdesk.com/v2/docs/app-setup-events/#afterappupdate."}},"addon":{"version":"1.11.0","url":"https://dl.freshdev.io/cli-addon/addon-1.11.0.zip"}},"last_updated":{"time_stamp":1662609229556}}[0m
+2022-09-14 15:12:24.501 +0530 [debug] ([34mdata-util.js[0m) [31mRead {"version_details":{"cli":{"deprecated":{"version":"<8","message":"This FDK version will be deprecated by September 30, 2022. There will be no further feature updates to this version. For a seamless app building experience, ensure to move to the latest FDK version. For more information, see https://community.developers.freshworks.com/t/5433."},"forced":{"version":"7.0.0","command":"npm install https://dl.freshdev.io/cli/fdk-7.0.0.tgz -g","message":"Your FDK version has been forced updated to v7.0.0, please visit https://community.developers.freshworks.com/t/fdk-v7-0-announcing-node-js-v12-and-es6-support/3606 to know more"},"latest":{"version":"8.6.0","command":"npm install https://dl.freshdev.io/cli/fdk.tgz -g","message":"You can now use the new app setup event - afterAppUpdate, to carry out appropriate app actions after an app is updated and its latest version is installed. For more information, refer to our documentation at https://developers.freshdesk.com/v2/docs/app-setup-events/#afterappupdate."}},"addon":{"version":"1.11.0","url":"https://dl.freshdev.io/cli-addon/addon-1.11.0.zip"}},"last_updated":{"time_stamp":1662609229556}}[0m
+2022-09-14 15:12:25.585 +0530 [debug] ([34mvalidate.js[0m) [31masked to skip the following validations, [0m
+2022-09-14 15:12:25.586 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator actions[0m
+2022-09-14 15:12:25.586 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator app-dir[0m
+2022-09-14 15:12:25.587 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator config-dir[0m
+2022-09-14 15:12:25.587 +0530 [debug] ([34mconfig-dir.js[0m) [31mChecking to see if /Users/saifas/Freshworks/DeveloperRelations/DeveloperTools/samples apps on github org/app-setup-events-samples/afterAppUpdate/config/ exists.[0m
+2022-09-14 15:12:25.588 +0530 [debug] ([34mconfig-dir.js[0m) [31mFetched the following config files iparams.json[0m
+2022-09-14 15:12:25.588 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator custom-objects[0m
+2022-09-14 15:12:25.588 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator event[0m
+2022-09-14 15:12:25.598 +0530 [debug] ([34mevent-util.js[0m) [31mFound ["afterAppUpdateHandler","onAppInstallHandler","onScheduledEventHandler"] as exported functions.[0m
+2022-09-14 15:12:25.599 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator iparam[0m
+2022-09-14 15:12:25.601 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator lint[0m
+2022-09-14 15:12:25.601 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator manifest[0m
+2022-09-14 15:12:25.602 +0530 [debug] ([34mmanifest.js[0m) [31mrunning manifest validation with type run_validation[0m
+2022-09-14 15:12:25.602 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator manifest-dependency[0m
+2022-09-14 15:12:25.602 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator oauth[0m
+2022-09-14 15:12:25.602 +0530 [debug] ([34mvalidate.js[0m) [31mskipping validator pkgsize[0m
+2022-09-14 15:12:25.602 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator schema[0m
+2022-09-14 15:12:25.602 +0530 [debug] ([34mvalidate.js[0m) [31mrunning validator version-check[0m
+2022-09-14 15:12:25.607 +0530 [debug] ([34mwatcher.js[0m) [31mPreparing to watch the following files ./app,./config,./manifest.json[0m
+2022-09-14 15:12:25.611 +0530 [debug] ([34minstall-util.js[0m) [31mdependency installer called with {}[0m
+2022-09-14 15:12:25.612 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-14 15:12:25.612 +0530 [debug] ([34mcustom-objects.js[0m) [31mto force or not? false[0m
+2022-09-14 15:12:25.612 +0530 [debug] ([34mcustom-objects.js[0m) [31mbeginning to re-sync db[0m
+2022-09-14 15:12:25.770 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/bigint-pivot.js"[0m
+2022-09-14 15:12:25.772 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/entity-field-choice.js"[0m
+2022-09-14 15:12:25.773 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/entity-field.js"[0m
+2022-09-14 15:12:25.774 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/entity.js"[0m
+2022-09-14 15:12:25.775 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/record.js"[0m
+2022-09-14 15:12:25.776 +0530 [debug] ([34mindex.js[0m) [31mloading model at "/Users/saifas/Freshworks/freshapps_sdk/lib/models/string-pivot.js"[0m
+2022-09-14 15:12:25.796 +0530 [debug] ([34mdata-util.js[0m) [31mRead {}[0m
+2022-09-14 15:12:25.797 +0530 [debug] ([34mcustom-objects.js[0m) [31mupdated local store with latest entity hash[0m
+2022-09-14 15:12:25.797 +0530 [info] Starting local testing server at http://*:10001/    
+Append 'dev=true' to your Freshdesk account URL to start testing    
+e.g. https://domain.freshdesk.com/a/tickets/1?dev=true    
+Quit the server with Control-C.
+2022-09-14 15:12:25.797 +0530 [info] 
+To simulate product, app setup, and external events, visit - http://localhost:10001/web/test
+2022-09-14 15:12:25.797 +0530 [info] Populating test data with events found in the app
+2022-09-14 15:12:28.837 +0530 [info] 
+NOTE: We recommend a coverage of 80% for apps that are to be published in the public marketplace.
