@@ -1,61 +1,81 @@
-# App Setup Events Samples
+# NovaBridge MSP — App Setup Events
 
-App setup events are events that occur when an app is installed from the Freshworks Marketplace or updated to the latest version or uninstalled. These are asynchronous events and developers can enable their apps to decide if the event should reach completion or perform various tasks based on the event.
+Full **Platform 3.0** lifecycle sample for managed-service integrations: install, pre-update, post-update, uninstall, recurring schedules, and external webhooks.
 
-For Example: If a webhook has to be registered during app installation, you can use the app setup event to disallow installation if the webhook registration fails. You can configure event listeners in the `manifest.json` file. 
+**Platform:** 3.0 · **FDK:** 10.1.2 · **Node:** 24.11.0 · **UI:** Crayons v4
 
-When an app setup event occurs, the corresponding event listener invokes a callback method defined in server.js and passes a standard payload to the method.
+---
 
-### Prerequisites:
+## Handlers
 
-1. Make sure you have a trial Freshdesk account created. You can always [sign up](https://freshdesk.com/signup)
-2. Ensure that you have the [Freshworks CLI](https://community.developers.freshworks.com/t/what-are-the-prerequisites-to-install-the-freshworks-cli/234) installed properly.
+| Event | Handler | Purpose |
+|-------|---------|---------|
+| `onAppInstall` | `onAppInstallHandler` | Creates `syncSchedule` via `$schedule.create`, registers webhook URL via `generateTargetUrl()` |
+| `onAppUpdate` | `onAppUpdateHandler` | Pre-update hook (handler + test_data included; **not registerable in manifest** — see blockers) |
+| `afterAppUpdate` | `afterAppUpdateHandler` | Validates schedule with `$schedule.fetch`; `renderData({ message })` reverts on failure |
+| `onAppUninstall` | `onAppUninstallHandler` | Deletes schedule via `$schedule.delete` |
+| `onScheduledEvent` | `onScheduledEventHandler` | Stub PSA sync job (logs tenant payload) |
+| `onExternalEvent` | `onExternalEventHandler` | Demo webhook callback handler |
 
-### afterAppUpdate
+All events are registered under `modules.common.events` in `manifest.json`.
 
-After you upload a new version of your app, in the Apps gallery > MANAGE APPS an Update button is displayed next to the app (for admin users). If the admin clicks the button and updates the app, the new app version is installed and the `afterAppUpdate` event is triggered.
+---
 
-The sample code under this example demonstrates the use of `afterAppUpdate` app setup event. This hook can be used to tie the logic when users manually update their app on the Freshworks Marketplace.
+## Setup
 
-> **Note**
-> If your app contains the afterAppUpdate event, app users are not automatically moved to the latest app version after it is available. The app users must click the Update button and manually upgrade.
-
-#### How to setup
-
-Register the afterAppUpdate event by using the following sample `manifest.json` content:
-
-```
-"events": {
-    "afterAppUpdate": {
-        "handler": "afterAppUpdateCallback"
-    }
-}
+```sh
+git clone https://github.com/freshworks-developers/app-setup-events-samples.git
+cd app-setup-events-samples
+fdk validate
+fdk run
 ```
 
-Define the corresponding callback that does not interrupt usage of the updated app, by using the following sample `server.js` content:
+In the FDK test UI, pick an event from the drop-down (`onAppInstall`, `onAppUpdate`, `afterAppUpdate`, `onAppUninstall`, `onScheduledEvent`, `onExternalEvent`) and invoke the matching handler. Test payloads live in `server/test_data/`.
 
-```
-exports = {
-    afterAppUpdateCallback: function(payload) {
-        console.log("Logging arguments from afterAppUpdate event: " + JSON.stringify(payload));
-        // To continue usage of the updated app.
-        renderData();
-    }
-}
+> **Note:** If your app registers `afterAppUpdate`, admins must click **Update** in Manage Apps — tenants are not auto-upgraded.
+
+```sh
+fdk pack
 ```
 
-Define the corresponding callback that reverts the app to the earlier installed version if a mandatory action fails, by using the following sample `server.js` content:
+---
+
+## Project structure
 
 ```
-exports = {
-    afterAppUpdateCallback: function(payload) {
-        console.log("Logging arguments from afterAppUpdate event: " + JSON.stringify(payload));
-        // To revert to earlier installed app version.
-        renderData({message: "Updating to the latest version of the app failed due to network error."});
-    }
-}
+.
+├── manifest.json
+├── config/iparams.json
+├── server/
+│   ├── server.js
+│   └── test_data/          # Payloads for fdk run simulation
+├── app/
+│   ├── index.html          # Ticket sidebar — lifecycle status for dev testing
+│   ├── scripts/app.js
+│   └── styles/
+├── README.md
+└── USECASE.md
 ```
 
-Sample Application: [Click Here](https://github.com/freshworks-developers/app-setup-events-samples/tree/main/afterAppUpdate)
+---
 
-Official Documentation: [Click Here](https://developers.freshdesk.com/v2/docs/app-setup-events/#afterappupdate)
+## Blockers
+
+- **`onAppUpdate`:** FDK 10.1.2 rejects `onAppUpdate` in `modules.common.events` (`Invalid event: 'onAppUpdate' for module: common`). Handler and `server/test_data/onAppUpdate.json` are included for inventory coverage; wire into manifest when the platform adds support.
+
+---
+
+## Tech stack
+
+- **Platform:** Freshworks Platform 3.0
+- **Runtime:** Node.js 24.11.0 · FDK 10.1.2
+- **UI:** Crayons v4 (minimal dev sidebar)
+
+---
+
+## Resources
+
+- [App setup events](https://developers.freshworks.com/docs/app-sdk/v3.0/common/app-settings/app-setup-events/)
+- [External events](https://developers.freshworks.com/docs/app-sdk/v3.0/common/serverless-apps/external-events/)
+- [Scheduled events](https://developers.freshworks.com/docs/app-sdk/v3.0/common/serverless-apps/scheduled-events/)
+- [USECASE.md](./USECASE.md)

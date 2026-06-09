@@ -1,0 +1,16 @@
+.cache
+.cache/
+.DS_Store
+.env
+.env.development.local
+.env.local
+.env.production.local
+.env.test.local
+.eslintcache
+.fdk
+.fdk/
+.report.json
+*.log
+coverage
+log/
+node_modules/

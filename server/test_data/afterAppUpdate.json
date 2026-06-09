@@ -1,0 +1,17 @@
+{
+  "timestamp": 1496400354326,
+  "account_id": "13",
+  "domain": "novabridge.freshdesk.com",
+  "event": "afterAppUpdate",
+  "region": "US",
+  "iparams": {
+    "psaTenantId": "tenant-acme-001",
+    "psaApiKey": "demo-key"
+  },
+  "currentHost": {
+    "endpoint_urls": {
+      "freshdesk": "https://novabridge.freshdesk.com"
+    },
+    "subscribed_modules": ["support_ticket"]
+  }
+}

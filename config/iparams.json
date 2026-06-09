@@ -1,0 +1,15 @@
+{
+  "psaTenantId": {
+    "display_name": "PSA Tenant ID",
+    "description": "NovaBridge tenant identifier used during install and sync",
+    "type": "text",
+    "required": false
+  },
+  "psaApiKey": {
+    "display_name": "PSA API Key",
+    "description": "API key for NovaBridge PSA integration (demo only)",
+    "type": "text",
+    "required": false,
+    "secure": true
+  }
+}

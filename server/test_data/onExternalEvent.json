@@ -1,0 +1,19 @@
+{
+  "timestamp": 1496400354326,
+  "account_id": "13",
+  "domain": "novabridge.freshdesk.com",
+  "event": "onExternalEvent",
+  "region": "US",
+  "headers": {
+    "Content-Type": "application/json",
+    "X-NovaBridge-Signature": "demo-signature"
+  },
+  "data": {
+    "event_type": "ticket.updated",
+    "ticket_id": 9001,
+    "status": "resolved"
+  },
+  "iparams": {
+    "psaTenantId": "tenant-acme-001"
+  }
+}

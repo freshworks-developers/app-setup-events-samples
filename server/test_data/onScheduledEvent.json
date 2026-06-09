@@ -1,0 +1,11 @@
+{
+  "timestamp": 1496400354326,
+  "account_id": "13",
+  "domain": "novabridge.freshdesk.com",
+  "event": "onScheduledEvent",
+  "region": "US",
+  "data": {
+    "tenant": "tenant-acme-001",
+    "desc": "NovaBridge PSA sync payload"
+  }
+}
