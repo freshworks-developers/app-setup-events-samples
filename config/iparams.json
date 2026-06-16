@@ -1,13 +1,14 @@
 {
   "psaTenantId": {
     "display_name": "PSA Tenant ID",
-    "description": "NovaBridge tenant identifier used during install and sync",
+    "description": "Your NovaBridge PSA tenant slug (demo: tenant-acme-001). Stored on the sync schedule and logged during scheduled sync.",
     "type": "text",
-    "required": false
+    "required": false,
+    "default_value": "tenant-acme-001"
   },
   "psaApiKey": {
     "display_name": "PSA API Key",
-    "description": "API key for NovaBridge PSA integration (demo only)",
+    "description": "Optional demo API key for a real PSA integration. Not used by this sample's stub handlers — enter any placeholder locally.",
     "type": "text",
     "required": false,
     "secure": true

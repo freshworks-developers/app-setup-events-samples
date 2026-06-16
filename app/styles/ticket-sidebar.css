@@ -1,0 +1,90 @@
+.nb-meta {
+  margin: 0;
+  padding: 10px;
+  border: 1px solid #ebeff3;
+  border-radius: 6px;
+  background: #f5f7f9;
+}
+
+.nb-meta__row {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 8px;
+  padding: 4px 0;
+}
+
+.nb-meta__row + .nb-meta__row {
+  border-top: 1px solid #e5e9ed;
+  margin-top: 4px;
+  padding-top: 8px;
+}
+
+.nb-meta dt {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 600;
+  color: #475867;
+}
+
+.nb-meta dd {
+  margin: 0;
+  font-size: 12px;
+  word-break: break-word;
+}
+
+.nb-lifecycle-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ebeff3;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.nb-lifecycle-list__item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  gap: 2px 8px;
+  padding: 8px 10px;
+  border-bottom: 1px solid #ebeff3;
+}
+
+.nb-lifecycle-list__item:last-child {
+  border-bottom: 0;
+}
+
+.nb-lifecycle-list__event {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.nb-lifecycle-list__badge {
+  align-self: start;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 2px 6px;
+  border-radius: 999px;
+}
+
+.nb-lifecycle-list__badge--registered {
+  color: #0d6832;
+  background: #e7f5ec;
+}
+
+.nb-lifecycle-list__badge--reference {
+  color: #7a4f01;
+  background: #fff4e5;
+}
+
+.nb-lifecycle-list__api {
+  grid-column: 1 / -1;
+  font-size: 11px;
+  color: #475867;
+}
+
+#refresh-btn {
+  align-self: flex-start;
+}

@@ -6,6 +6,7 @@ exports = {
 
     try {
       const scheduleAt = new Date(Date.now() + 5 * 60 * 1000).toISOString();
+      const tenantId = args.iparams?.psaTenantId || 'tenant-acme-001';
       const scheduleOpts = {
         name: SCHEDULE_NAME,
         schedule_at: scheduleAt,
@@ -14,7 +15,7 @@ exports = {
           frequency: 10
         },
         data: {
-          tenant: args.iparams?.psaTenantId || 'default',
+          tenant: tenantId,
           desc: 'NovaBridge PSA sync payload'
         }
       };
@@ -25,6 +26,7 @@ exports = {
       }
 
       const targetUrl = await generateTargetUrl();
+      console.info('PSA tenant registered for sync:', tenantId);
       console.info('External event target URL registered:', targetUrl);
       console.info('Schedule created successfully');
       renderData();
@@ -72,10 +74,11 @@ exports = {
   },
 
   onScheduledEventHandler: function (args) {
-    console.info('NovaBridge scheduled PSA sync started');
+    const tenant = (args.data && args.data.tenant) || 'tenant-acme-001';
+    console.info('NovaBridge scheduled PSA sync started for tenant:', tenant);
     console.info('Schedule payload:', JSON.stringify(args.data || {}));
-    console.info('Simulating ticket delta pull and PSA push for tenant sync');
-    console.info('NovaBridge scheduled PSA sync completed');
+    console.info('Simulating ticket delta pull and PSA push');
+    console.info('NovaBridge scheduled PSA sync completed for tenant:', tenant);
   },
 
   onExternalEventHandler: function (args) {

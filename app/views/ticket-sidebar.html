@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaBridge Lifecycle</title>
+    <script async src="{{{appclient}}}"></script>
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/ticket-sidebar.css" />
+  </head>
+  <body>
+    <div class="nb-app">
+      <header class="nb-header">
+        <img src="../styles/images/rocket.svg" alt="" class="nb-header__icon" />
+        <div class="nb-header__text">
+          <span class="nb-header__brand">NovaBridge MSP</span>
+          <span class="nb-header__title">App setup events</span>
+        </div>
+      </header>
+
+      <div class="nb-body">
+        <fw-inline-message id="tenant-banner" type="info" closable="false" hidden>
+          PSA tenant not configured — use any demo ID at install (e.g. <code>tenant-acme-001</code>).
+        </fw-inline-message>
+
+        <dl class="nb-meta">
+          <div class="nb-meta__row">
+            <dt>PSA tenant</dt>
+            <dd id="tenant-id">Loading…</dd>
+          </div>
+          <div class="nb-meta__row">
+            <dt>Ticket context</dt>
+            <dd id="ticket-context">Loading…</dd>
+          </div>
+        </dl>
+
+        <p class="nb-muted">
+          Server handlers run during install, upgrade, uninstall, schedules, and webhooks.
+          Simulate them from the FDK test UI while <code>fdk run</code> is active.
+        </p>
+
+        <fw-label value="Lifecycle handlers" color="grey"></fw-label>
+        <ul id="lifecycle-list" class="nb-lifecycle-list"></ul>
+
+        <fw-button id="refresh-btn" color="secondary" size="small">Refresh context</fw-button>
+      </div>
+    </div>
+
+    <script async type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+    <script async nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+    <script src="../scripts/lib/lifecycle-catalog.js"></script>
+    <script defer src="../scripts/ticket-sidebar.js"></script>
+  </body>
+</html>
